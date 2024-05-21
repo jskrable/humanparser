@@ -36,7 +36,7 @@ parser.parseName = function (name, opts = {}) {
 		ignoreSuffix = ignoreSuffix.map(lc);
 	}
 	const salutations = ['mr', 'master', 'mister', 'mrs', 'miss', 'ms', 'dr', 'prof', 'rev', 'fr', 'judge', 'honorable', 'hon', 'tuan', 'sr', 'srta', 'br', 'pr', 'mx', 'sra', ...extraSalutations].filter(salutation => !ignoreSalutation.includes(salutation));
-	const suffixes = ['i', 'ii', 'iii', 'iv', 'v', 'senior', 'junior', 'jr', 'sr', 'phd', 'apr', 'rph', 'pe', 'md', 'ma', 'dmd', 'cme', 'qc', 'kc', ...extraSuffixes].filter(suffix => !ignoreSuffix.includes(suffix));
+	const suffixes = ['i', 'ii', 'iii', 'iv', 'v', 'senior', 'junior', 'jr', 'sr', 'phd', 'apr', 'rph', 'pe', 'md', 'dmd', 'cme', 'qc', 'kc', ...extraSuffixes].filter(suffix => !ignoreSuffix.includes(suffix));
 	const compound = ['vere', 'von', 'van', 'de', 'del', 'della', 'der', 'den', 'di', 'da', 'pietro', 'vanden', 'du', 'st.', 'st', 'la', 'lo', 'ter', 'bin', 'ibn', 'te', 'ten', 'op', 'ben', 'al', ...extraCompound].filter(compound => !ignoreCompound.includes(compound));
 
 	let parts = name
